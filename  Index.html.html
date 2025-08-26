@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect with Chase Rice</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0c0c0c;
+      color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 40px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: gold;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: #fff;
+    }
+
+    input[type="submit"] {
+      background-color: gold;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e5c100;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Apply to Connect with Chase Rice</h2>
+
+    <form action="https://formspree.io/f/mrblekkz" method="POST">
+      <input type="hidden" name="_next" value="https://connnectwithchaserice.netlify.app/ThankYou_ChaseRice.html">
+      <input type="hidden" name="_gotcha" style="display:none">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="country">Country / Time Zone</label>
+      <input type="text" id="country" name="country" required>
+
+      <label for="purpose">Purpose of Contact</label>
+      <select id="purpose" name="purpose" required>
+        <option value="">-- Select an option --</option>
+        <option value="fan_message">Fan video message</option>
+        <option value="chat">Private video call</option>
+        <option value="business">Business or Sponsorship</option>
+        <option value="event">Event Booking</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="details">Describe Your Request</label>
+      <textarea id="details" name="details" rows="4" required></textarea>
+
+      <label for="social">Your Social Media Handle (optional)</label>
+      <input type="text" id="social" name="social">
+
+      <label for="preferredDate">Preferred Date</label>
+      <input type="date" id="preferredDate" name="preferredDate">
+
+      <label>
+        <input type="checkbox" name="consent" required>
+        I agree that submitting this form does not guarantee a reply or acceptance.
+      </label>
+
+      <input type="submit" value="Submit Request">
+    </form>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 ConnectWithChaseRice.com | All rights reserved
+  </div>
+
+</body>
+</html>
